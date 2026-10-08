@@ -1,3 +1,4 @@
+---@class DarktideNetworkMonitorMod
 local mod = get_mod("DarktideNetworkMonitor")
 
 local UIWidget = require("scripts/managers/ui/ui_widget")
