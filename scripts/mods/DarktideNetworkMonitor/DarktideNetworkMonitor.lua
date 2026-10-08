@@ -1,3 +1,4 @@
+---@class DarktideNetworkMonitorMod: DMFMod
 local mod = get_mod("DarktideNetworkMonitor")
 
 local SAMPLE_INTERVAL = 1
@@ -5,6 +6,7 @@ local JITTER_SAMPLE_COUNT = 30
 local HUD_ELEMENT_PATH = "DarktideNetworkMonitor/scripts/mods/DarktideNetworkMonitor/DarktideNetworkMonitor_hud"
 local Network = rawget(_G, "Network")
 local runtime = mod:persistent_table("runtime")
+---@cast runtime table
 local hud_settings = {}
 
 local function refresh_settings()
